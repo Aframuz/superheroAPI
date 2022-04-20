@@ -48,6 +48,9 @@ h1 {
 .accordion-body {
    background-color: var(--color-acc-bg);
 }
+.accordion-body img {
+   box-shadow: 0rem 0rem 0.5rem var(--color-acc-shadow);
+}
 .accordion-button:focus {
    box-shadow: 0rem 0rem 0.5rem var(--color-acc-shadow);
 }

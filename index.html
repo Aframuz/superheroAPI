@@ -4,9 +4,17 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="" />
-      <meta name="keywords" content="HTML, CSS, JavaScript" />
+      <meta name="description" content="Desafío Encuentra tu SuperHero" />
+      <meta name="keywords" content="HTML, CSS, JavaScript, API" />
       <meta name="author" content="Aframuz" />
+
+      <!-- Favicon -->
+      <link
+         rel="icon"
+         type="image/x-ico"
+         href="./assets/img/favicon.ico"
+         sizes="32x32"
+      />
 
       <!-- CSS -->
       <link
@@ -17,12 +25,14 @@
       />
       <link rel="stylesheet" href="./assets/css/style.css" />
 
-      <title>Desafío</title>
+      <title>Desafío - Encuentra tu SuperHero</title>
    </head>
    <body>
       <main>
          <!-- HEADER -->
-         <h1 class="fst-italic text-center py-2 py-lg-4">Desafío</h1>
+         <h1 class="fst-italic text-center py-2 py-lg-4">
+            Desafío - Encuentra tu SuperHero
+         </h1>
          <!-- EXERCISES -->
          <div id="exercises" class="mx-auto">
             <!-- First Row -->
@@ -36,16 +46,34 @@
                      <div class="card-body">
                         <div class="card-text">
                            <p class="mb-1">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Sequi iusto itaque debitis unde libero.
-                              Doloremque, hic! Nostrum libero adipisci eveniet,
-                              nesciunt est similique quis. Quam qui quisquam
-                              esse consectetur eligendi. Provident,
-                              reprehenderit facere facilis dolorem in recusandae
-                              dolores rerum! Debitis illo corrupti temporibus
-                              animi sit enim minima, commodi omnis recusandae
-                              est, veritatis assumenda cum rem, nam quia!
-                              Debitis, culpa! Nulla.
+                              La revista semanal SuperHero Chile, se encuentra
+                              en plena fase de masificación mediante medios
+                              digitales, por lo tanto, se diseñó un plan para
+                              atraer más clientes y así aumentar el tráfico en
+                              su página web.
+                           </p>
+                           <p class="mb-1">
+                              En base a lo anterior, usted ha sido contratado
+                              para crear una aplicación dinámica que permita a
+                              los usuarios buscar un superhéroe y visualizar
+                              información referente al personaje buscado.
+                           </p>
+                           <p class="mb-1">
+                              Ahora bien, para obtener la información necesaria
+                              de los Superhéroes se deberá consultar a la API
+                              denominada “SuperHero API”, la cual, se encuentra
+                              disponible en
+                              <a
+                                 class="link-light"
+                                 href="https://www.superheroapi.com/"
+                                 >https://www.superheroapi.com/</a
+                              >
+                              . Esta API en particular requiere de una clave o
+                              access-token, que se entrega al iniciar sesión con
+                              una cuenta de Facebook. Recuerda leer la
+                              documentación disponible en la API y revisar el
+                              material llamado Apoyo Prueba - Encuentra tu
+                              SuperHero.
                            </p>
                         </div>
                      </div>
@@ -70,12 +98,11 @@
                               data-bs-parent="#accordion"
                            >
                               <div class="accordion-body">
-                                 1. Lorem ipsum dolor sit amet consectetur
-                                 adipisicing elit. Temporibus quod cumque
-                                 necessitatibus quo vel fugiat! Illum mollitia
-                                 voluptates nihil odit similique sequi
-                                 consequatur dolores possimus aliquam
-                                 repudiandae! Architecto, perspiciatis ipsa?
+                                 1. Crear la estructura básica para la página
+                                 web implementando HTML, que incluya un
+                                 formulario de búsqueda. Utilizar etiquetas
+                                 semánticas de HTML5 para definir y separar las
+                                 secciones.
                               </div>
                            </div>
                         </div>
@@ -95,12 +122,19 @@
                               data-bs-parent="#accordion"
                            >
                               <div class="accordion-body">
-                                 2. Lorem ipsum dolor sit amet consectetur
-                                 adipisicing elit. Deserunt, enim voluptate
-                                 pariatur soluta explicabo sunt, veniam qui
-                                 atque cumque tenetur delectus quasi? Hic porro
-                                 molestiae odit. Nam voluptatem aspernatur
-                                 commodi.
+                                 <p>
+                                    2. Agregar estilos mediante frameworks o
+                                    librería de CSS, implementando por ejemplo
+                                    menús de navegación y botones. Los estilos
+                                    los puedes agregar a tu gusto. Como se
+                                    muestra en la siguiente imagen de
+                                    referencia:
+                                 </p>
+                                 <img
+                                    class="w-100"
+                                    src="./assets/img/example01.jpg"
+                                    alt="Vista principal de la página web de referencia con el formulario de búsqueda"
+                                 />
                               </div>
                            </div>
                         </div>
@@ -120,11 +154,57 @@
                               data-bs-parent="#accordion"
                            >
                               <div class="accordion-body">
-                                 3. Lorem ipsum dolor sit amet consectetur
-                                 adipisicing elit. Itaque, a rem nam provident
-                                 hic, eveniet dolorum praesentium ipsam
-                                 dignissimos officia doloribus tempora, et rerum
-                                 minima non vel mollitia consectetur soluta!
+                                 <p>
+                                    3. Una vez ingresado el número del héroe a
+                                    buscar y después de realizar un click sobre
+                                    el botón de búsqueda, se debe capturar y
+                                    validar la información para evitar búsquedas
+                                    que contengan algún texto diferente a
+                                    números y mostrar la información
+                                    dinámicamente mediante la librería jQuery y
+                                    CanvasJS con un gráfico de pastel. Para
+                                    lograr todo esto se debe:
+                                 </p>
+                                 <ol>
+                                    <li>
+                                       Capturar la información ingresada
+                                       mediante eventos del DOM con jQuery.
+                                    </li>
+                                    <li>
+                                       Implementar funciones para separar la
+                                       captura de la información ingresada por
+                                       el usuario con la consulta a la API.
+                                    </li>
+                                    <li>
+                                       Comprobar la información ingresada por el
+                                       usuario, la cual, solo debe ser un
+                                       número.
+                                    </li>
+                                    <li>
+                                       Consultar la API mediante AJAX con la
+                                       sintaxis de jQuery.
+                                    </li>
+                                    <li>
+                                       Renderizar la información recibida por la
+                                       API dinámicamente utilizando tarjetas
+                                       (card) de Bootstrap.
+                                    </li>
+                                    <li>
+                                       Utilizar ciclos y métodos para arreglos u
+                                       objetos que permitan recorrer, ordenar y
+                                       mostrar la información.
+                                    </li>
+                                    <li>
+                                       Emplear la librería de gráficos CanvasJS,
+                                       para mostrar dinámicamente información
+                                       específica de cada superhéroe.
+                                    </li>
+                                    <li>
+                                       Implementar estructuras condicionales
+                                       para generar alertas cuando existan
+                                       errores en la búsqueda.
+                                    </li>
+                                 </ol>
                               </div>
                            </div>
                         </div>
@@ -144,36 +224,15 @@
                               data-bs-parent="#accordion"
                            >
                               <div class="accordion-body">
-                                 4. Lorem, ipsum dolor sit amet consectetur
-                                 adipisicing elit. Unde esse vel doloremque
-                                 porro. Soluta sunt, natus iste veniam illum
-                                 amet adipisci voluptate, perferendis rem
-                                 voluptatem, eaque laboriosam velit vel
-                                 blanditiis!
-                              </div>
-                           </div>
-                        </div>
-                        <!-- Item 5 -->
-                        <div class="accordion-item">
-                           <h2 class="accordion-header" id="flush-headingFive">
-                              <button
-                                 class="accordion-button collapsed"
-                                 type="button"
-                                 data-bs-toggle="collapse"
-                                 data-bs-target="#flush-collapseFive"
-                              ></button>
-                           </h2>
-                           <div
-                              id="flush-collapseFive"
-                              class="accordion-collapse collapse"
-                              data-bs-parent="#accordion"
-                           >
-                              <div class="accordion-body">
-                                 5. Lorem ipsum dolor, sit amet consectetur
-                                 adipisicing elit. Voluptatum velit ipsam ullam
-                                 eaque, tempora nisi voluptates culpa provident
-                                 accusantium similique doloremque enim laborum?
-                                 Impedit in, recusandae id natus ipsam aliquam.
+                                 <p>
+                                    En la siguiente imagen, se puede observar el
+                                    resultado de la búsqueda del id número: 213.
+                                 </p>
+                                 <img
+                                    class="w-100"
+                                    src="./assets/img/example02.jpg"
+                                    alt="Vista principal de la página web con el resultado de la consulta del Héroe."
+                                 />
                               </div>
                            </div>
                         </div>
