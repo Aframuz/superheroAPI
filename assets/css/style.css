@@ -1,0 +1,66 @@
+@import url(./fonts.css);
+
+:root {
+   --color-primary: #729e2e;
+   --color-text: #fff;
+   --color-bg: #35313c;
+   --color-card-bg: #678e29;
+   --color-acc-border: #8eb158;
+   --color-acc-bg: #f1f5ea;
+   --color-acc-shadow: rgba(68, 95, 28, 0.75);
+}
+/*=============================================
+=                   GENERAL                   =
+=============================================*/
+body {
+   font-family: "UniNeue";
+   color: var(--color-text);
+   background-color: var(--color-bg);
+}
+h1 {
+   color: var(--color-primary);
+   font-weight: 800;
+}
+#exercises {
+   max-width: 90%;
+}
+
+/*=============================================
+=                 DESCRIPTION                 =
+=============================================*/
+.card-body,
+.accordion-button {
+   background-color: var(--color-primary);
+}
+.card-header,
+.accordion-button:not(.collapsed) {
+   background-color: var(--color-card-bg);
+}
+.accordion-item {
+   border-color: var(--color-acc-border);
+}
+.accordion-body {
+   color: var(--color-primary);
+}
+.accordion-button {
+   padding: 0.75rem 1.25rem;
+}
+.accordion-body {
+   background-color: var(--color-acc-bg);
+}
+.accordion-button:focus {
+   box-shadow: 0rem 0rem 0.5rem var(--color-acc-shadow);
+}
+.accordion-button:not(.collapsed)::after {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f1f5ea'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button.collapsed::after {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2335313c'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/*=============================================
+=                  EXERCISE                   =
+=============================================*/
+.exercise > div {
+   background-color: var(--color-primary);
+}

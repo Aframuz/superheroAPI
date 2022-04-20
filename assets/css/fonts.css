@@ -1,0 +1,98 @@
+/*=============================================
+=                Normal Style                 =
+=============================================*/
+@font-face {
+   font-family: UniNeue;
+   font-style: normal;
+   font-weight: 100;
+   src: local("UniNeue"), url("../fonts/UniNeueThin.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: normal;
+   font-weight: 200;
+   src: local("UniNeue"), url("../fonts/UniNeueLight.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: normal;
+   font-weight: 300;
+   src: local("UniNeue"), url("../fonts/UniNeueBook.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: normal;
+   font-weight: 400;
+   src: local("UniNeue"), url("../fonts/UniNeueRegular.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: normal;
+   font-weight: 700;
+   src: local("UniNeue"), url("../fonts/UniNeueBold.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: normal;
+   font-weight: 800;
+   src: local("UniNeue"), url("../fonts/UniNeueHeavy.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: normal;
+   font-weight: 900;
+   src: local("UniNeue"), url("../fonts/UniNeueBlack.otf") format("opentype");
+}
+
+/*=============================================
+=                Italic Style                 =
+=============================================*/
+@font-face {
+   font-family: UniNeue;
+   font-style: italic;
+   font-weight: 100;
+   src: local("UniNeue"),
+      url("../fonts/UniNeueThin-Italic.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: italic;
+   font-weight: 200;
+   src: local("UniNeue"),
+      url("../fonts/UniNeueLight-italic.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: italic;
+   font-weight: 300;
+   src: local("UniNeue"),
+      url("../fonts/UniNeueBook-italic.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: italic;
+   font-weight: 400;
+   src: local("UniNeue"),
+      url("../fonts/UniNeueRegular-italic.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: italic;
+   font-weight: 700;
+   src: local("UniNeue"),
+      url("../fonts/UniNeueBold-italic.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: italic;
+   font-weight: 800;
+   src: local("UniNeue"),
+      url("../fonts/UniNeueHeavy-italic.otf") format("opentype");
+}
+@font-face {
+   font-family: UniNeue;
+   font-style: italic;
+   font-weight: 900;
+   src: local("UniNeue"),
+      url("../fonts/UniNeueBlack-italic.otf") format("opentype");
+}
