@@ -67,3 +67,21 @@ h1 {
 .exercise > div {
    background-color: var(--color-primary);
 }
+
+#banner {
+   box-shadow: 0 0 0.7rem var(--color-bg);
+   width: 50%;
+}
+
+/*=============================================
+=                MEDIA QUERIES                =
+=============================================*/
+@media screen and (max-width: 768px) {
+   #banner {
+      width: 100%;
+   }
+}
+/*----------          TEST          ----------*/
+#heroNumber {
+   width: 80px;
+}
