@@ -35,21 +35,21 @@ tu SuperHero.
    dinámicamente mediante la librería jQuery y CanvasJS con un gráfico de pastel. Para
    lograr todo esto se debe: **(8 Puntos)**
 
-   3.1 Capturar la información ingresada mediante eventos del DOM con jQuery. **(1 Punto)**
+   1. Capturar la información ingresada mediante eventos del DOM con jQuery. **(1 Punto)**
 
-   3.2 Implementar funciones para separar la captura de la información ingresada por el usuario con la consulta a la API. **(1 Punto)**
+   2. Implementar funciones para separar la captura de la información ingresada por el usuario con la consulta a la API. **(1 Punto)**
 
-   3.3 Comprobar la información ingresada por el usuario, la cual, solo debe ser un número. **(0.5 Puntos)**
+   3. Comprobar la información ingresada por el usuario, la cual, solo debe ser un número. **(0.5 Puntos)**
 
-   3.4 Consultar la API mediante AJAX con la sintaxis de jQuery. **(1 Punto)**
+   4. Consultar la API mediante AJAX con la sintaxis de jQuery. **(1 Punto)**
 
-   3.5 Renderizar la información recibida por la API dinámicamente utilizando tarjetas (card) de Bootstrap. **(1 Punto)**
+   5. Renderizar la información recibida por la API dinámicamente utilizando tarjetas (card) de Bootstrap. **(1 Punto)**
 
-   3.6 Utilizar ciclos y métodos para arreglos u objetos que permitan recorrer, ordenar y mostrar la información. **(1 Punto)**
+   6. Utilizar ciclos y métodos para arreglos u objetos que permitan recorrer, ordenar y mostrar la información. **(1 Punto)**
 
-   3.7 Emplear la librería de gráficos CanvasJS, para mostrar dinámicamente información específica de cada superhéroe. **(2 Puntos)**
+   7. Emplear la librería de gráficos CanvasJS, para mostrar dinámicamente información específica de cada superhéroe. **(2 Puntos)**
 
-   3.8 Implementar estructuras condicionales para generar alertas cuando existan errores en la búsqueda. **(0.5 Punto)**
+   8. Implementar estructuras condicionales para generar alertas cuando existan errores en la búsqueda. **(0.5 Punto)**
 
 En la siguiente imagen, se puede observar el resultado de la búsqueda del id número: 213.
 
