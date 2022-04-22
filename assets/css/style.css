@@ -71,12 +71,29 @@ h1 {
 .exercise > div {
    background-color: var(--color-primary);
 }
-
 #banner {
    box-shadow: 0 0 0.7rem var(--color-bg);
    width: 50%;
 }
-
+#heroNumber {
+   width: 80px;
+}
+.btn {
+   background-color: var(--color-bg3);
+}
+.sh-card,
+.sh-name,
+.list-group-item {
+   background-color: var(--color-chart-bg-dark2);
+   color: var(--color-text);
+}
+#sh-chart,
+.sh-card {
+   box-shadow: 0 0 00.5rem var(--color-acc-shadow);
+}
+.list-group-item {
+   border: 1px solid rgba(255, 255, 255, 0.125);
+}
 /*=============================================
 =                MEDIA QUERIES                =
 =============================================*/
@@ -86,29 +103,3 @@ h1 {
    }
 }
 /*----------          TEST          ----------*/
-#heroNumber {
-   width: 80px;
-}
-.list-group-item {
-   border: 1px solid rgba(255, 255, 255, 0.125);
-   color: var(--color-acc-bg);
-}
-.sh-name {
-   color: var(--color-acc-bg);
-}
-.sh-card {
-   box-shadow: 0 0 00.5rem var(--color-acc-shadow);
-}
-#sh-chart {
-   box-shadow: 0 0 00.5rem var(--color-acc-shadow);
-}
-.btn {
-   background-color: var(--color-bg3);
-}
-
-.sh-card,
-.sh-name,
-.list-group-item {
-   background-color: var(--color-chart-bg-dark2);
-   color: var(--color-text);
-}
