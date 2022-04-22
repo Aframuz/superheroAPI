@@ -57,7 +57,7 @@ En la siguiente imagen, se puede observar el resultado de la b√∫squeda del id n√
 
 # TODO
 
--  [x] Check scroll Function
--  [x] Change data.response error placholder
--  [x] Check Anonymous functions checkData & CheckApearance
--  [x] Change insert data method
+-  [ ] Check scroll Function
+-  [ ] Change data.response error placholder
+-  [ ] Check Anonymous functions checkData & CheckApearance
+-  [ ] Change insert data method
