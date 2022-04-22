@@ -1,7 +1,5 @@
 # Encuentra tu SuperHero
 
-## Descripción
-
 La revista semanal SuperHero Chile, se encuentra en plena fase de masificación mediante medios digitales, por lo tanto, se diseñó un plan para atraer más clientes y así aumentar el tráfico en su página web.
 
 En base a lo anterior, usted ha sido contratado para crear una aplicación dinámica que
@@ -59,4 +57,7 @@ En la siguiente imagen, se puede observar el resultado de la búsqueda del id n�
 
 # TODO
 
--  [ ] check
+-  [x] Check scroll Function
+-  [x] Change data.response error placholder
+-  [x] Check Anonymous functions checkData & CheckApearance
+-  [x] Change insert data method
