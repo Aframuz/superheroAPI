@@ -8,6 +8,10 @@
    --color-acc-border: #8eb158;
    --color-acc-bg: #f1f5ea;
    --color-acc-shadow: rgba(68, 95, 28, 0.75);
+   --color-chart-bg-dark2: #32373a;
+
+   --color-bg2: #2a301f;
+   --color-bg3: #1b1c20;
 }
 /*=============================================
 =                   GENERAL                   =
@@ -87,10 +91,24 @@ h1 {
 }
 .list-group-item {
    border: 1px solid rgba(255, 255, 255, 0.125);
-   background-color: var(--color-primary);
-   color: var(--color-text);
+   color: var(--color-acc-bg);
+}
+.sh-name {
+   color: var(--color-acc-bg);
+}
+.sh-card {
+   box-shadow: 0 0 00.5rem var(--color-acc-shadow);
+}
+#sh-chart {
+   box-shadow: 0 0 00.5rem var(--color-acc-shadow);
+}
+.btn {
+   background-color: var(--color-bg3);
 }
 
-.sh-card {
-   background-color: var(--color-card-bg);
+.sh-card,
+.sh-name,
+.list-group-item {
+   background-color: var(--color-chart-bg-dark2);
+   color: var(--color-text);
 }

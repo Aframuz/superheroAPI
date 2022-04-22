@@ -139,6 +139,39 @@ $(function () {
             $(".sh-height").text(checkAppearance(usefulData.appearance.height))
             $(".sh-occupation").text(usefulData.occupation)
             $(".sh-connections").text(usefulData.connections)
+
+            // Generate dataPoints stat array
+            const stats = []
+            for (const key in usefulData.powerstats) {
+               if (usefulData.powerstats[key] === "null") {
+                  stats.push({ y: 0, label: key })
+               } else {
+                  stats.push({ y: +usefulData.powerstats[key], label: key })
+               }
+            }
+
+            // CHART
+            var chart = new CanvasJS.Chart("sh-chart", {
+               theme: "dark2", // "light1", "light2", "dark1", "dark2"
+               exportEnabled: true,
+               animationEnabled: true,
+               title: {
+                  text: `Estadísticas de Poder para ${usefulData.name}`,
+               },
+               data: [
+                  {
+                     type: "pie",
+                     startAngle: 25,
+                     toolTipContent: "<b>{label}</b>: {y}%",
+                     showInLegend: "true",
+                     legendText: "{label}",
+                     indexLabelFontSize: 16,
+                     indexLabel: "{label} - ({y})",
+                     dataPoints: stats,
+                  },
+               ],
+            })
+            chart.render()
          })
          .fail(function () {
             console.error("Error fetching data")
