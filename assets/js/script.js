@@ -1,49 +1,12 @@
 /*=============================================
-=             EXERCISE BODY HEIGHT            =
+=           HERO IMAGE ROUND BORDER           =
 =============================================*/
 // Initialize
-exerciseHeightSetter()
 imageRoundedTop()
 // Execute HeightSetter on window resize
 window.addEventListener("resize", () => {
-   exerciseHeightSetter()
    imageRoundedTop()
 })
-
-// Set height of exercise column equal to description
-function exerciseHeightSetter() {
-   // Grab all description & exercises columns, declare breakpoints
-   const descriptionSections = document.querySelectorAll(".description")
-   const exerciseSections = document.querySelectorAll(".exercise")
-   const breakpoints = {
-      sm: 576,
-      md: 768,
-      lg: 992,
-      xl: 1200,
-      xxl: 1400,
-   }
-
-   // Change height if window width is above threshold, else remove height style attribute
-   if (window.innerWidth > breakpoints["lg"]) {
-      // Itereate through description sections, grab their height & apply them to corresponding exercise column, in px
-      descriptionSections.forEach((dSection, index) => {
-         const fixedHeight = dSection.children[0].offsetHeight
-         exerciseSections[index].children[0].style.height = `${fixedHeight}px`
-      })
-      return
-   } else {
-      exerciseSections.forEach((eSection) => {
-         if (eSection.children[0].getAttribute("style")) {
-            eSection.children[0].style.removeProperty("height")
-         }
-      })
-      return
-   }
-}
-
-/*=============================================
-=           HERO IMAGE ROUND BORDER           =
-=============================================*/
 // Add 'rounded-top' to image at certain width threshold
 function imageRoundedTop() {
    // Get ALL SuperHero Info div & SuperHero image elements
@@ -89,6 +52,22 @@ $(function () {
    $("form").submit((event) => {
       event.preventDefault()
 
+      // Scroll function
+      jQuery.fn.scrollTo = function (elem, speed) {
+         $(this).animate(
+            {
+               scrollTop:
+                  $(this).scrollTop() -
+                  $(this).offset().top +
+                  $(elem).offset().top,
+            },
+            speed == undefined ? 500 : speed
+         )
+         return this
+      }
+
+      $("#scrollableEx").scrollTo("#info")
+
       // Get number and validate it
       const heroNumber = $("#heroNumber").val()
       if (!isNumberValid(heroNumber)) {
@@ -103,7 +82,7 @@ $(function () {
          .done(function (data) {
             // placeholder error
             if (data.response == "error") {
-               alert("error")
+               alert("No hay SuperHéroe con esa ID")
                return
             }
 
@@ -123,22 +102,28 @@ $(function () {
                powerstats: data.powerstats,
             }
             // If data exists format, if not replace
-            const checkAppearance = (AppearanceData) => {
-               return AppearanceData[0].includes("-")
-                  ? "???"
-                  : AppearanceData.join(" - ")
+            const checkAppearance = (appearanceData) => {
+               return appearanceData[0].includes("-")
+                  ? "desconocido"
+                  : appearanceData.join(" - ")
+            }
+            // If data does not exists, replace
+            const checkData = (data) => {
+               return data ? data : "-"
             }
 
             // Insert data into card info MANUALLY
             $(".sh-image").attr("src", usefulData.image)
-            $(".sh-name").text(usefulData.name)
-            $(".sh-aliases").text(usefulData.aliases)
-            $(".sh-publisher").text(usefulData.publisher)
-            $(".sh-first-appearance").text(usefulData.firstAppearance)
+            $(".sh-name").text(checkData(usefulData.name))
+            $(".sh-aliases").text(checkData(usefulData.aliases))
+            $(".sh-publisher").text(checkData(usefulData.publisher))
+            $(".sh-first-appearance").text(
+               checkData(usefulData.firstAppearance)
+            )
             $(".sh-weight").text(checkAppearance(usefulData.appearance.weight))
             $(".sh-height").text(checkAppearance(usefulData.appearance.height))
-            $(".sh-occupation").text(usefulData.occupation)
-            $(".sh-connections").text(usefulData.connections)
+            $(".sh-occupation").text(checkData(usefulData.occupation))
+            $(".sh-connections").text(checkData(usefulData.connections))
 
             // Generate dataPoints stat array
             const stats = []
