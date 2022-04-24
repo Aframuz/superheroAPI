@@ -17,7 +17,7 @@
 =                   GENERAL                   =
 =============================================*/
 body {
-   font-family: "UniNeue";
+   font-family: "UniNeue", sans-serif;
    color: var(--color-text);
    background-color: var(--color-bg);
 }

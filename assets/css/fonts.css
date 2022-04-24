@@ -52,47 +52,47 @@
    font-style: italic;
    font-weight: 100;
    src: local("UniNeue"),
-      url("../fonts/UniNeueThin-Italic.otf") format("opentype");
+      url("../fonts/UniNeueThinItalic.otf") format("opentype");
 }
 @font-face {
    font-family: UniNeue;
    font-style: italic;
    font-weight: 200;
    src: local("UniNeue"),
-      url("../fonts/UniNeueLight-italic.otf") format("opentype");
+      url("../fonts/UniNeueLightItalic.otf") format("opentype");
 }
 @font-face {
    font-family: UniNeue;
    font-style: italic;
    font-weight: 300;
    src: local("UniNeue"),
-      url("../fonts/UniNeueBook-italic.otf") format("opentype");
+      url("../fonts/UniNeueBookItalic.otf") format("opentype");
 }
 @font-face {
    font-family: UniNeue;
    font-style: italic;
    font-weight: 400;
    src: local("UniNeue"),
-      url("../fonts/UniNeueRegular-italic.otf") format("opentype");
+      url("../fonts/UniNeueRegularItalic.otf") format("opentype");
 }
 @font-face {
    font-family: UniNeue;
    font-style: italic;
    font-weight: 700;
    src: local("UniNeue"),
-      url("../fonts/UniNeueBold-italic.otf") format("opentype");
+      url("../fonts/UniNeueBoldItalic.otf") format("opentype");
 }
 @font-face {
    font-family: UniNeue;
    font-style: italic;
    font-weight: 800;
    src: local("UniNeue"),
-      url("../fonts/UniNeueHeavy-italic.otf") format("opentype");
+      url("../fonts/UniNeueHeavyItalic.otf") format("opentype");
 }
 @font-face {
    font-family: UniNeue;
    font-style: italic;
    font-weight: 900;
    src: local("UniNeue"),
-      url("../fonts/UniNeueBlack-italic.otf") format("opentype");
+      url("../fonts/UniNeueBlackItalic.otf") format("opentype");
 }
